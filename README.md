@@ -43,3 +43,25 @@ Let's consider an example where each node is assigned three virtual nodes:
 ![consistent-hashing-4](./images/consistent-hashing-4.png)
 
 With the introduction of virtual nodes, instead of having just three nodes on the hash ring, we now have nine virtual nodes mapped onto it, tripling the number of nodes on the hash ring and creating a relatively uniform node distribution. In this scenario, if there's a request addressing virtual node "A-01", it finds the real node A through the "A-01" virtual node, thereby accessing the actual node A.
+
+## Code Test
+
+### Consistent Hashing without virtual nodes
+
+![consistent_hashing_code1](./images/consistent_hashing_code1.png)
+
+#### Standard Deviation Result
+
+![consistent_hashing_code3](./images/consistent_hashing_code3.png)
+
+### Consistent Hashing with virtual nodes
+
+![consistent_hashing_code2](./images/consistent_hashing_code2.png)
+
+Standard Deviation Result with 10 virutual nodes
+
+![node10](./images/node10.png)
+
+Standard Deviation Result with 100 virutual nodes
+
+![node100](./images/node100.png)
